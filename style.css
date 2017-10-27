@@ -18,6 +18,17 @@
 
     
 }
+.mobileHidden{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display:none;
+}
+@media (max-width:640px) {
+    .mobileHidden{
+        display:block;
+    }
+}
 .choiceActive{
     display:none;
     height:75%;

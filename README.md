@@ -4,7 +4,7 @@
 ➡ http://lucaslareginie.fr/perlin/
 
 **What is it ?**
-This werbsite allow you to visualize some basics exemples of Perlin Noise visuals. To understand what Perlin Noise is , read the followings docs :
+This website allows you to visualize some basics exemples of Perlin Noise visuals. To understand what Perlin Noise is , read the followings docs :
 
  
 
