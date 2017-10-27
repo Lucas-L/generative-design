@@ -1,0 +1,94 @@
+.perlinSelector{
+    position: absolute;
+    width: 25%;
+    height: 500px;
+
+    top: calc(50% - 250px);
+    left:37.5%;
+    background: white;
+    display: inline-block;
+
+}
+.choice{
+    height:75%;
+    width: 80%;
+    margin: auto auto;
+    padding-top: 20%;
+
+
+    
+}
+.choiceActive{
+    display:none;
+    height:75%;
+    width: 80%;
+    margin: auto auto;
+
+
+}
+.buttonC{
+    text-align: center;
+    width: 175px;
+    height: 30px;
+    margin: 0 auto;
+}
+.buttonC:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    transition: transform  0.1s ;
+}
+.buttonC::before{
+    content:'<';
+}
+.buttonC::after{
+    content:'>';
+}
+.reptileB{
+
+
+
+}
+.chosen{
+    font-size: 25px;
+    margin-top: 25%;
+  
+}
+.chosen:hover{
+    cursor:auto;
+    transform: none;
+}
+h2{
+    text-align: center;
+    font-size: 2.5em;
+}
+h2::before{
+    content:"<";
+}
+h2::after{
+    content:">";
+}
+h4{
+    
+    text-align: right;
+    font-size: 0.8em;
+    margin-right: 5%;
+    margin-top: -5%;
+    font-weight: 200;
+
+}
+body{
+    height: 100vh;
+    width:100vw;
+    font-family:"OfficeCode";
+    overflow: hidden;
+    margin: 0;
+}
+
+.clearB{
+    margin-top: 80px;
+    
+}
+@font-face {
+	font-family: "OfficeCode";
+	src: url("officeCode.ttf")
+} 
