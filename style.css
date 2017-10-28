@@ -23,6 +23,18 @@
     width: 100vw;
     height: 100vh;
     display:none;
+    z-index: 6;
+    text-align: center;
+    padding-top: 40%;
+    background-color: white;
+}
+.txtHidden{
+    font-size: 20px;
+    text-align: center;
+}
+#danger {
+    
+    font-size: 60px;
 }
 @media (max-width:640px) {
     .mobileHidden{
