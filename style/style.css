@@ -2,11 +2,12 @@
     position: absolute;
     width: 25%;
     height: 500px;
-
+    text-align: center;
     top: calc(50% - 250px);
     left:37.5%;
     background: white;
     display: inline-block;
+    
 
 }
 .choice{
@@ -111,7 +112,13 @@ body{
     margin-top: 80px;
     
 }
+#chevronUp{
+        cursor: pointer;
+        font-size: 25px;
+        
+    }
 @font-face {
 	font-family: "OfficeCode";
 	src: url("../ressources/officeCode.ttf")
 } 
+
