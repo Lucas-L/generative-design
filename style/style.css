@@ -54,9 +54,12 @@
     width: 175px;
     height: 30px;
     margin: 0 auto;
+    text-decoration: none;
+    color:#444;
 }
 .buttonC:hover{
     cursor: pointer;
+    color:black;
     transform: scale(1.08);
     transition: transform  0.1s ;
 }
@@ -106,6 +109,15 @@ body{
     overflow: hidden;
     margin: 0;
 }
+.arcB{
+    margin-bottom:60px;
+}
+.gitlink::before{
+content:''
+}
+.gitlink::after{
+    content:''
+    }
 
 .clearB{
     margin-top: 80px;
