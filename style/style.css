@@ -21,27 +21,26 @@
 }
 .mobileHidden{
     position: fixed;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     display:none;
     z-index: 6;
     text-align: center;
     padding-top: 40%;
     background-color: white;
 }
+
 .txtHidden{
-    font-size: 20px;
+    font-size: 80px;
     text-align: center;
+    margin: 50px;
+    margin-top: 80px;
 }
 #danger {
     
-    font-size: 60px;
+    font-size: 360px;
 }
-@media (max-width:640px) {
-    .mobileHidden{
-        display:block;
-    }
-}
+
 .choiceActive{
     display:none;
     height:75%;
@@ -116,6 +115,17 @@ body{
         cursor: pointer;
         font-size: 25px;
         
+    }
+@media (max-width:640px) {
+    .mobileHidden{
+        display:block;
+    }
+    body{
+        height: 150px;
+        width:  150px;
+        
+
+        }
     }
 @font-face {
 	font-family: "OfficeCode";
