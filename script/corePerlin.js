@@ -81,9 +81,9 @@ drawTan = function (theme) {
             context.fillStyle = "hsla(" + (v * 60) + ", 45%, 80%, 1)"; //Couleur , proche du noir , intensitié color
             context.fillRect(pa.x, pa.y, 2.0, 2.0); // Espacement x,y et epaisseur x,y
             pa.he++;
-            a = v * 2 * Math.PI + pa.a;
-            pa.x += Math.cos(a);
-            particleFinals.push(pa.y += Math.sin(a));
+            a = v * 0.5 * Math.PI + pa.a;
+            pa.x += Math.sin(a);
+            particleFinals.push(pa.y += Math.cos(a));
             context.closePath();
             
         

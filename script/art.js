@@ -54,10 +54,10 @@ arc = [];
 
 for (var i = 1; i <= 4000; i++) {
     partArc = {
-        x:  wi / 0.765 * Math.random(),
-        y: he * Math.random()* dpi * Math.random(),
+        x:  wi / 0.61 * Math.random(),
+        y: he * 6 * dpi * Math.random(),
         a: 0,
-        per: 1 / 120
+        per: 1 / 420
         
     };
     arc.push(partArc);
