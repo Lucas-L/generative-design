@@ -14,8 +14,7 @@ context.fillRect(0, 0, wi, he);
 context.fillStyle = 'rgba(1,1,1,0.3)';
 noise.seed(Math.random());
 
-//drawFunct
-// Drawreptile
+
 var drawCos;
 drawCos = function (theme) {
     
@@ -42,9 +41,6 @@ drawCos = function (theme) {
     return particleFinals;
     
 };
-
-
-//DrawSinew
 var drawSin;
 drawSin = function (theme) {
     
@@ -67,8 +63,7 @@ drawSin = function (theme) {
     return particleFinals;
     
 };
-
-//Drawarc
+var drawTan;
 drawTan = function (theme) {
     
     var a, pa, v, j, particleFinals;
@@ -85,31 +80,58 @@ drawTan = function (theme) {
             pa.x += Math.sin(a);
             particleFinals.push(pa.y += Math.cos(a));
             context.closePath();
-            
-        
-        
     }
 
     
     return particleFinals;
     
 };
-// Function Launching
+var drawFib;
+function randomVal(min, max) {
+    return Math.floor(Math.random() * (max - min) + 1) + min;
+}
+
+let rdHslaVal= "hsla(" + randomVal(Math.random() * 1 , 100) + "," + randomVal(40, 75) + "%," + randomVal(40,60) + "%, 0.1)";
+drawFib= function (theme){
+    var a, pa, v, j, particleFinals;
+    particleFinals = [];
+    
+    for (j = 0; j < theme.length; j++) {
+    
+            pa = theme[j];
+            v = noise.perlin2(pa.x * pa.per, pa.y * pa.per);
+            context.beginPath();
+            
+
+            context.fillStyle = rdHslaVal //Couleur , proche du noir , intensitié color
+            context.fillRect(pa.x, pa.y, 1, 3.0); // Espacement x,y et epaisseur x,y
+            pa.he++;
+            a = (v + Math.sqrt(5)) / 2  * Math.random() 
+            pa.x += (a + Math.sqrt(5)) / 2  * Math.random()
+            particleFinals.push(pa.y += (a + Math.sqrt(5)) / 2 );
+            context.closePath();
+    }
+
+    
+    return particleFinals;
+}
+
 
 
 
 drawReptile = function () {
-
     anim(drawReptile);
     return drawCos(reptile);
 };
 drawSinew = function () {
-
     anim(drawSinew);
     return drawSin(sinew);
 };
 drawArc = function () {
-
     anim(drawArc);
     return drawTan(arc);
 };
+drawLines = () => {
+    anim(drawLines);
+    return drawFib(lines)
+}

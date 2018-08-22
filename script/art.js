@@ -70,6 +70,24 @@ for (var i = 1; i <= 4000; i++) {
     
 }
 
+//SIREN
+lines = [];
+for(var i = 1;i <= 10000;i++){
+    partLines= {
+        x:  wi * Math.random() * (1 + Math.sqrt(5)) / 2,
+        y: he * 0.09 * dpi * Math.random() * 2,
+        a: 0,
+        per: 1 / 620
+        
+    };
+    lines.push(partLines);
+    lines.push({
+        x: partLines.x,
+        y: partLines.y,
+        a: dpi / 2,
+        per:partLines.per
+    });
+}
 
 
 

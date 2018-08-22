@@ -57,6 +57,7 @@
     text-decoration: none;
     color:#444;
 }
+
 .buttonC:hover{
     cursor: pointer;
     color:black;
@@ -110,7 +111,7 @@ body{
     margin: 0;
 }
 .arcB{
-    margin-bottom:60px;
+    
 }
 .gitlink::before{
 content:''
@@ -128,6 +129,16 @@ content:''
         font-size: 25px;
         
     }
+.gitlink{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 30px;
+    left: calc(50% - 15px);
+}
+.gitlink img{
+    height: 30px;
+}
 @media (max-width:640px) {
     .mobileHidden{
         display:block;

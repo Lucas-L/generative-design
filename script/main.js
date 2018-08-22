@@ -2,6 +2,7 @@ var reptileb = document.querySelector(".reptileB");
 var sinewb = document.querySelector(".sinewB");
 var clearB=document.createElement("div");
 var arcb = document.querySelector(".arcB");
+var linesB = document.querySelector(".linesB");
 var cos="cos",sin="sin";
 
 reptileb.addEventListener("click", () => {
@@ -13,13 +14,20 @@ sinewb.addEventListener("click", () => {
     anim(drawSinew);
     designChosen("sinewB")
 })
-clearB.addEventListener("click", () => {
-    window.location.reload()
-})
 
 arcb.addEventListener("click", () => {
     anim(drawArc);
     designChosen("arcB")
+})
+
+linesB.addEventListener("click", () => {
+    anim(drawLines);
+    designChosen("linesB")
+})
+
+
+clearB.addEventListener("click", () => {
+    window.location.reload()
 })
 
 

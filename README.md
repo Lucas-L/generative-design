@@ -1,7 +1,6 @@
 ﻿Generative design
 =================
-⚠ Work in progress ⚠
-➡ 
+
 
 http://lucaslareginie.fr/perlin/
 --------------------------------
@@ -15,6 +14,7 @@ This werbsite allow you to visualize some basics exemples of Perlin Noise visual
  - https://en.wikipedia.org/wiki/Perlin_noise
  - https://fr.khanacademy.org/computing/computer-programming/programming-natural-simulations/programming-noise/a/perlin-noise
  
+The perlin noise JS integration has been made by Stefan Gustavson.
 
 How to use it ?
 -------------------
