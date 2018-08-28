@@ -8,7 +8,6 @@ var cos="cos",sin="sin";
 const resize = () => {
     canvas.width=window.innerWidth
     canvas.height=window.innerHeight
-    createJungle()
 }
 
 resize()
