@@ -5,6 +5,15 @@ var arcb = document.querySelector(".arcB");
 var linesB = document.querySelector(".linesB");
 var cos="cos",sin="sin";
 
+const resize = () => {
+    canvas.width=window.innerWidth
+    canvas.height=window.innerHeight
+    createJungle()
+}
+
+resize()
+window.addEventListener('resize',resize)
+
 reptileb.addEventListener("click", () => {
     anim(drawReptile);
     designChosen('reptileB')

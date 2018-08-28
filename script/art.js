@@ -74,7 +74,7 @@ for (var i = 1; i <= 4000; i++) {
 lines = [];
 for(var i = 1;i <= 10000;i++){
     partLines= {
-        x:  wi * Math.random() * (1 + Math.sqrt(5)) / 2,
+        x:  wi * Math.random()  * (1 + Math.sqrt(5)) / 2,
         y: he * 0.09 * dpi * Math.random() * 2,
         a: 0,
         per: 1 / 620
