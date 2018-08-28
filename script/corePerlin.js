@@ -101,8 +101,6 @@ drawFib= function (theme){
             pa = theme[j];
             v = noise.perlin2(pa.x * pa.per, pa.y * pa.per);
             context.beginPath();
-            
-
             context.fillStyle = rdHslaVal //Couleur , proche du noir , intensitié color
             context.fillRect(pa.x, pa.y, 1, 3.0); // Espacement x,y et epaisseur x,y
             pa.he++;
@@ -116,8 +114,30 @@ drawFib= function (theme){
     return particleFinals;
 }
 
+var drawKla
+drawKla = function (theme) {
+    
+    var a, pa, v, j, particleFinals;
+    particleFinals = [];
+    for (j = 0; j < theme.length; j++) {
+    
+            pa = theme[j];
+            v = noise.perlin2(pa.x * pa.per, pa.y * pa.per);
+            context.beginPath();
+            context.fillStyle = "hsla("+ 200 + (15 + (Math.random() * 50) * v) +" , 205%, 80%, 1)"; //Couleur , proche du noir , intensitié color
+            
+            context.fillRect(pa.x, pa.y, 2.0, 2.0); // Espacement x,y et epaisseur x,y
+            pa.he++;
+            a = v * 2 * Math.PI + pa.a;
+            pa.x += Math.sin(a);
+            particleFinals.push(pa.y += Math.cos(a));
+            context.closePath();
+    }
 
-
+    
+    return particleFinals;
+    
+};
 
 drawReptile = function () {
     anim(drawReptile);
@@ -134,4 +154,12 @@ drawArc = function () {
 drawLines = () => {
     anim(drawLines);
     return drawFib(lines)
+}
+drawLychen = () => {
+    anim(drawLychen);
+    return drawFib(drawSin(lychen))
+}
+drawPasta = () => {
+    anim(drawPasta);
+    return drawKla(pasta)
 }

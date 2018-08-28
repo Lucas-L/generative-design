@@ -18,10 +18,20 @@ canvas{
     height:75%;
     width: 80%;
     margin: auto auto;
-    padding-top: 20%;
+    padding-top: 10%;
 
 
     
+}
+.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    visibility:hidden;
+}
+.close img{
+    width:20px;
 }
 .mobileHidden{
     position: fixed;

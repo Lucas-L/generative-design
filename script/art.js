@@ -70,7 +70,7 @@ for (var i = 1; i <= 4000; i++) {
     
 }
 
-//SIREN
+//LINES
 lines = [];
 for(var i = 1;i <= 10000;i++){
     partLines= {
@@ -89,7 +89,43 @@ for(var i = 1;i <= 10000;i++){
     });
 }
 
+//Lychen
+lychen = [];
+for(var i = 1;i <= (32000 +Math.random() * 40000);i++){
+    partlychen= {
+        x: wi / 0.61 * Math.random(),
+        y:he * 6 * dpi * Math.random() / 5  ,
+        a: 02,
+        per: 1 / Math.random() * 13000
+        
+    };
+    lychen.push(partlychen);
+    lychen.push({
+        x: partlychen.x,
+        y: partlychen.y,
+        a: dpi / 2,
+        per:partlychen.per
+    });
+}
 
+//TEST 
+pasta = [];
+for(var i = 1;i <= (7000);i++){
+    partpasta= {
+        x:  Math.random() * wi,
+        y:he * 1.2 * dpi * Math.random() / 7  ,
+        a: 20*Math.random(),
+        per:  1 / 500
+        
+    };
+    pasta.push(partpasta);
+    pasta.push({
+        x: partpasta.x,
+        y: partpasta.y,
+        a: dpi / 2,
+        per:partpasta.per
+    });
+}
 
 anim = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame || function (callback) {
     return window.setTimeout(callback, 1000 / 60);

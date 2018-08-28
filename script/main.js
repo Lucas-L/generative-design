@@ -3,6 +3,9 @@ var sinewb = document.querySelector(".sinewB");
 var clearB=document.createElement("div");
 var arcb = document.querySelector(".arcB");
 var linesB = document.querySelector(".linesB");
+var lychenB = document.querySelector(".lychenB");
+var pastaB = document.querySelector(".pastaB");
+var close = document.querySelector(".close")
 var cos="cos",sin="sin";
 
 const resize = () => {
@@ -32,10 +35,20 @@ linesB.addEventListener("click", () => {
     anim(drawLines);
     designChosen("linesB")
 })
-
+lychenB.addEventListener("click", () => {
+    anim(drawLychen);
+    designChosen("lychenB")
+})
+pastaB.addEventListener("click", () => {
+    anim(drawPasta);
+    designChosen("pastaB")
+})
 
 clearB.addEventListener("click", () => {
     window.location.reload()
+})
+close.addEventListener("click",() => {
+    document.querySelector(".perlinSelector").style.display="none"
 })
 
 
@@ -54,5 +67,6 @@ function designChosen(elem){
     clearB.innerHTML="  clear ";
     choiceActive.appendChild(target);
     choiceActive.appendChild(clearB);
+    close.style.visibility="visible"
 
 }
