@@ -153,15 +153,21 @@ content:''
 .gitlink img{
     height: 30px;
 }
-@media (max-width:640px) {
-    .mobileHidden{
-        display:block;
-    }
+@media (max-width:950px) {
+    
     body{
         height: 150px;
         width:  150px;
         
 
+        }
+        .perlinSelector {
+            position: absolute;
+            width: 75%;
+            height: 450px;
+            text-align: center;
+            top: calc(50% - 250px);
+            left: 12.5%;
         }
     }
 @font-face {
